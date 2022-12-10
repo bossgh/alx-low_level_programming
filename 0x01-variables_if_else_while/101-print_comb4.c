@@ -8,27 +8,29 @@
 
 int main(void)
 {
-	int i, j, k, l;
-
-	i = 0;
-	while (i < 1000)
+	int os = '0';
+	int ts = '0';
+	int hs = '0';
+	
+	for (hs = '0'; hs <= '9'; hs++)
 	{
-		j = i / 100; /* hundreds */
-		k = (i / 10) % 10; /* tens */
-		l = i % 100;
-
-		if (j < k && k < l)
+		for (ts = '0'; ts <= '9'; ts++)
 		{
-			putchar(l + '0');
-			putchar(k + '0');
-			putchar(j + '0');
-			if (i < 789)
+			for (os = '0'; os <= '9'; os++)
 			{
-				putchar(',');
-				putchar(' ');
+				if (!((os == ts) || (ts == hs) || (ts > os) || hs > ts))
+				{
+					putchar(hs);
+					putchar(ts);
+					putchar(os);
+					if (!(os == '9' && hs == '7' && ts =='8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
