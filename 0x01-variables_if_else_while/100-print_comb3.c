@@ -14,13 +14,13 @@ int main(void)
 
 	for (ts = '0'; ts <= '9'; ts++)
 	{
-		for (os = '0'; os <='9'; os++)
+		for (os = '0'; os <= '9'; os++)
 		{
 			if (!((os == ts) || (ts > os)))
 			{
 				putchar(ts);
 				putchar(os);
-				if (!(os == '9' && ts =='8'))
+				if (!(os == '9' && ts == '8'))
 				{
 					putchar(',');
 					putchar(' ');
