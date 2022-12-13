@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * 
+ *
  * @t: the integer
  *
  * Return: the absolute value
