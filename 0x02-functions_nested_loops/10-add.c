@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - returns the addition
+ * add - add the two numbers
  *
  * @a: number one
  *
