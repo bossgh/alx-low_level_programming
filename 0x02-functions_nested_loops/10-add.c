@@ -7,7 +7,7 @@
  *
  * @b: number two
  *
- * Return: a + b 
+ * Return: Always 0 (SUccess)
  */
 
 int add(int a, int b)
