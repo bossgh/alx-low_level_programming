@@ -91,7 +91,7 @@ int check_for_digits(char **av)
  * @l: length of strinf
  *
  * Return: void
- */ 
+ */
 
 void init(char *str, int l)
 {
